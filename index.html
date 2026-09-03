@@ -15,26 +15,20 @@
       min-height: 100vh;
     }
 
-    /* Navigation Styles */
+    /* Horizontal Navigation */
     .site-nav {
       position: fixed;
       top: 20px;
       left: 20px;
-      background: rgba(15, 23, 42, 0.8);
-      padding: 1rem 1.2rem;
-      border-radius: 12px;
-      backdrop-filter: blur(6px);
       z-index: 1000;
     }
 
     .site-nav ul {
+      display: flex;
+      gap: 2rem;
       list-style: none;
       margin: 0;
       padding: 0;
-    }
-
-    .site-nav li {
-      margin-bottom: 0.6rem;
     }
 
     .site-nav a {
@@ -103,5 +97,6 @@
   <script src="navigation.js"></script>
 </body>
 </html>
+
 
 
