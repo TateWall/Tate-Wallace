@@ -8,7 +8,7 @@
     --dark-teal: #0f4c4c;
     --dark-teal-hover: #176565;
     --teal-light: #dceeed;
-    --page-bg: #f3f7f6;
+    --page-bg: #e6e6e6;
     --content-bg: #ffffff;
     --border: #123f3f;
     --text: #172626;
@@ -25,21 +25,28 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    background: var(--page-bg);
+    background: #e6e6e6;
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
-/* 10% margin on each side */
+
+/* =========================
+   MAIN WEBSITE CONTAINER
+   ========================= */
+
 .site-shell {
     width: 80%;
     margin: 2rem auto;
-    background: var(--content-bg);
+    background: #ffffff;
     border: 2px solid var(--dark-teal);
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+   ========================= */
 
 .site-header {
     display: grid;
@@ -47,6 +54,9 @@ body {
     min-height: 115px;
     border-bottom: 2px solid var(--dark-teal);
 }
+
+
+/* LOGO */
 
 .logo-area {
     display: flex;
@@ -64,27 +74,43 @@ body {
     font-weight: bold;
 }
 
+
+/* WEBSITE DESCRIPTION */
+
 .info-area {
     display: flex;
     align-items: center;
     padding: 1.25rem 1.5rem;
+    background: #ffffff;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+   ========================= */
 
 .primary-nav,
 .secondary-nav {
     width: 100%;
 }
 
+
+/* PRIMARY NAVIGATION */
+
 .primary-nav {
     border-bottom: 1px solid var(--dark-teal);
 }
+
+
+/* SECONDARY NAVIGATION */
 
 .secondary-nav {
     border-bottom: 2px solid var(--dark-teal);
     background: var(--teal-light);
 }
+
+
+/* NAVIGATION LIST */
 
 .nav-list {
     display: flex;
@@ -109,10 +135,16 @@ body {
     text-decoration: none;
 }
 
+
+/* SECONDARY NAVIGATION LINKS */
+
 .secondary-nav .nav-list a {
     color: var(--dark-teal);
     background: var(--teal-light);
 }
+
+
+/* NAVIGATION HOVER */
 
 .nav-list a:hover,
 .nav-list a:focus-visible,
@@ -121,21 +153,40 @@ body {
     color: white;
 }
 
-/* MOBILE NAVIGATION BUTTON */
+
+/* =========================
+   MOBILE NAVIGATION BUTTON
+   ========================= */
 
 .nav-toggle {
     display: none;
 }
 
-/* MAIN THREE-COLUMN LAYOUT */
+
+/* =========================
+   MAIN THREE-COLUMN LAYOUT
+   ========================= */
 
 .main-layout {
     display: grid;
+
+    /*
+     * Left sidebar: 20%
+     * Main content: 55%
+     * Right sidebar: 25%
+     */
+
     grid-template-columns: 20% 55% 25%;
+
     min-height: 500px;
+
+    background: #ffffff;
 }
 
-/* LEFT SIDEBAR */
+
+/* =========================
+   LEFT SIDEBAR
+   ========================= */
 
 .left-sidebar {
     padding: 1.5rem;
@@ -143,11 +194,15 @@ body {
     border-right: 2px solid var(--dark-teal);
 }
 
-/* MAIN CONTENT */
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
 
 .main-content {
     min-width: 0;
     padding: 1.5rem;
+    background: #ffffff;
 }
 
 .main-content h2 {
@@ -164,15 +219,27 @@ body {
     height: auto;
 }
 
-/* HERO */
+.main-content a {
+    color: var(--dark-teal);
+}
+
+
+/* =========================
+   HERO AREA
+   ========================= */
 
 .hero {
     min-height: 125px;
+
     margin-bottom: 1.5rem;
+
     padding: 1.25rem;
+
     display: flex;
     align-items: center;
+
     background: var(--teal-light);
+
     border: 2px solid var(--dark-teal);
 }
 
@@ -181,7 +248,18 @@ body {
     color: var(--dark-teal);
 }
 
-/* SIDEBAR NAVIGATION */
+.hero p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SIDEBAR NAVIGATION
+   ========================= */
+
+.sidebar-nav {
+    margin-bottom: 1.5rem;
+}
 
 .sidebar-nav h2,
 .right-sidebar h2 {
@@ -206,16 +284,22 @@ body {
     text-decoration: none;
 }
 
-.sidebar-nav a:hover {
+.sidebar-nav a:hover,
+.sidebar-nav a:focus-visible {
     color: white;
     background: var(--dark-teal);
 }
 
-/* RIGHT STICKY SIDEBAR */
+
+/* =========================
+   RIGHT STICKY SIDEBAR
+   ========================= */
 
 .right-sidebar {
     padding: 1.5rem;
+
     background: #eef4f3;
+
     border-left: 2px solid var(--dark-teal);
 }
 
@@ -229,13 +313,28 @@ body {
     padding-left: 1.2rem;
 }
 
-/* FOOTER */
+.sticky-content li {
+    margin-bottom: 0.5rem;
+}
+
+.sticky-content a {
+    color: var(--dark-teal);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
 
 .site-footer {
     padding: 1rem 1.5rem;
+
     border-top: 2px solid var(--dark-teal);
+
     background: var(--dark-teal);
+
     color: white;
+
     font-size: 0.9rem;
 }
 
@@ -246,18 +345,26 @@ body {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
+
     gap: 0.75rem 1.25rem;
+
     margin-bottom: 0.5rem;
 }
 
-/* ACCESSIBILITY */
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
 
 :focus-visible {
     outline: 3px solid #79caca;
     outline-offset: 2px;
 }
 
-/* TABLET */
+
+/* =========================
+   TABLET RESPONSIVE DESIGN
+   ========================= */
 
 @media (max-width: 900px) {
 
@@ -265,38 +372,51 @@ body {
         grid-template-columns: 1fr;
     }
 
+
     .logo-area {
         min-height: 85px;
+
         border-bottom: 2px solid var(--dark-teal);
     }
+
 
     .main-layout {
         grid-template-columns: 1fr;
     }
 
+
     .left-sidebar {
         border-right: 0;
+
         border-bottom: 2px solid var(--dark-teal);
     }
 
+
     .right-sidebar {
         border-left: 0;
+
         border-bottom: 2px solid var(--dark-teal);
     }
+
 
     .sticky-content {
         position: static;
     }
 }
 
-/* PHONE */
+
+/* =========================
+   PHONE RESPONSIVE DESIGN
+   ========================= */
 
 @media (max-width: 600px) {
 
     .site-shell {
         width: 80%;
+
         margin: 1rem auto;
     }
+
 
     .info-area,
     .main-content,
@@ -305,29 +425,49 @@ body {
         padding: 1rem;
     }
 
+
+    /* MOBILE MENU BUTTON */
+
     .nav-toggle {
         display: block;
+
         width: 100%;
+
         padding: 0.7rem 1rem;
+
         border: 0;
+
         background: var(--dark-teal);
+
         color: white;
+
         font: inherit;
+
         font-weight: bold;
+
         cursor: pointer;
     }
 
+
+    /* HIDE NAVIGATION UNTIL BUTTON IS CLICKED */
+
     .nav-list {
         display: none;
+
         flex-direction: column;
     }
+
+
+    /* SHOW NAVIGATION */
 
     .nav-list.is-open {
         display: flex;
     }
 
+
     .nav-list a {
         text-align: center;
-        border-top: 1px solid rgba(255,255,255,0.2);
+
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
