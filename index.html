@@ -6,12 +6,20 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Your Name | Portfolio</title>
+    <title>Tate | Marketing & Business Management</title>
 
-    <!-- Connect CSS -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Connect JavaScript -->
+    <!-- JavaScript Navigation -->
     <script src="nav.js" defer></script>
 </head>
 
@@ -19,7 +27,7 @@
 <body>
 
     <!-- =========================
-         ENTIRE WEBSITE CONTAINER
+         MAIN WEBSITE CONTAINER
          ========================= -->
 
     <div class="site-shell">
@@ -31,24 +39,30 @@
 
         <header class="site-header">
 
-            <!-- Logo -->
+            <!-- Logo / Name -->
             <div class="logo-area">
 
                 <a href="index.html">
-                    Your Logo
+                    Tate
                 </a>
 
             </div>
 
 
-            <!-- Website Description -->
+            <!-- Introduction -->
             <div class="info-area">
 
-                <p>
-                    Welcome to my website. This site provides
-                    information about my background, projects,
-                    experience, and professional interests.
-                </p>
+                <div>
+
+                    <span class="eyebrow">
+                        MARKETING & BUSINESS MANAGEMENT
+                    </span>
+
+                    <p>
+                        Iowa State University · Ivy College of Business
+                    </p>
+
+                </div>
 
             </div>
 
@@ -81,7 +95,7 @@
 
 
         <!-- =========================
-             MAIN THREE-COLUMN AREA
+             MAIN THREE-COLUMN LAYOUT
              ========================= -->
 
         <main class="main-layout">
@@ -138,14 +152,16 @@
 
                 <div class="sidebar-information">
 
-                    <h2>
-                        Quick Information
-                    </h2>
+                    <span class="sidebar-label">
+                        CURRENTLY
+                    </span>
 
                     <p>
-                        This section can contain additional
-                        information about you, your website,
-                        or your professional interests.
+                        Junior at Iowa State University
+                    </p>
+
+                    <p>
+                        Marketing & Business Management
                     </p>
 
                 </div>
@@ -161,20 +177,34 @@
             <section class="main-content">
 
 
-                <!-- HERO IMAGE / HERO AREA -->
+                <!-- =========================
+                     HERO
+                     ========================= -->
 
                 <div class="hero">
 
-                    <div>
+                    <div class="hero-content">
+
+                        <span class="hero-label">
+                            WELCOME
+                        </span>
 
                         <h1>
-                            Welcome to My Website
+                            Building ideas into
+                            meaningful experiences.
                         </h1>
 
                         <p>
-                            Explore my work, experience,
-                            projects, and professional journey.
+                            Explore my academic journey,
+                            professional interests, and
+                            creative work.
                         </p>
+
+                        <a
+                            href="#about"
+                            class="hero-button">
+                            Learn More
+                        </a>
 
                     </div>
 
@@ -183,20 +213,27 @@
 
 
                 <!-- =========================
-                     ABOUT SECTION
+                     ABOUT ME
                      ========================= -->
 
-                <section id="about">
+                <section
+                    id="about"
+                    class="content-section">
+
+                    <span class="section-label">
+                        ABOUT ME
+                    </span>
 
                     <h2>
-                        About Me
+                        A little about me
                     </h2>
 
                     <p>
-                        Welcome to my website. My name is
-                        Your Name, and I am a student interested
-                        in marketing, communication, business,
-                        and creative digital projects.
+                        Welcome to my website. My name is Tate,
+                        and I am a current junior majoring in
+                        marketing and business management at
+                        Iowa State University within the Ivy
+                        College of Business.
                     </p>
 
                     <p>
@@ -213,139 +250,197 @@
 
 
                 <!-- =========================
-                     PROJECTS SECTION
+                     PROJECTS
                      ========================= -->
 
-                <section id="projects">
+                <section
+                    id="projects"
+                    class="content-section">
+
+                    <span class="section-label">
+                        MY WORK
+                    </span>
 
                     <h2>
                         Projects
                     </h2>
 
                     <p>
-                        Below are some examples of projects
-                        I have completed through my academic
-                        and professional experiences.
+                        Explore some of the projects I have
+                        completed through my academic and
+                        professional experiences.
                     </p>
 
 
-                    <article>
-
-                        <h3>
-                            Marketing Project
-                        </h3>
-
-                        <p>
-                            Describe one of your marketing
-                            projects here. You can explain
-                            the purpose of the project,
-                            your responsibilities, and
-                            the results.
-                        </p>
-
-                    </article>
+                    <div class="project-grid">
 
 
-                    <article>
+                        <article class="project-card">
 
-                        <h3>
-                            Website Project
-                        </h3>
+                            <span class="card-number">
+                                01
+                            </span>
 
-                        <p>
-                            Describe this website project
-                            and explain the skills you used
-                            to create it.
-                        </p>
+                            <h3>
+                                Marketing Project
+                            </h3>
 
-                    </article>
+                            <p>
+                                A marketing project showcasing
+                                strategic thinking, research,
+                                and communication.
+                            </p>
+
+                            <a href="projects.html">
+                                View Project →
+                            </a>
+
+                        </article>
+
+
+
+                        <article class="project-card">
+
+                            <span class="card-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Website Project
+                            </h3>
+
+                            <p>
+                                A personal website designed to
+                                showcase my experience, skills,
+                                and professional interests.
+                            </p>
+
+                            <a href="projects.html">
+                                View Project →
+                            </a>
+
+                        </article>
+
+
+                    </div>
 
                 </section>
 
 
 
                 <!-- =========================
-                     EXPERIENCE SECTION
+                     EXPERIENCE
                      ========================= -->
 
-                <section id="experience">
+                <section
+                    id="experience"
+                    class="content-section">
+
+                    <span class="section-label">
+                        EXPERIENCE
+                    </span>
 
                     <h2>
-                        Experience
+                        Professional Experience
                     </h2>
 
                     <p>
-                        Add your professional, internship,
-                        volunteer, or other relevant
-                        experience in this section.
+                        Add your internships, jobs, volunteer
+                        experiences, and other professional
+                        experiences here.
                     </p>
 
 
-                    <h3>
-                        Position Title
-                    </h3>
+                    <div class="experience-card">
 
-                    <p>
-                        Company or Organization
-                    </p>
+                        <div>
 
-                    <p>
-                        Describe your responsibilities,
-                        accomplishments, and skills
-                        developed through this experience.
-                    </p>
+                            <span class="card-number">
+                                EXPERIENCE
+                            </span>
+
+                            <h3>
+                                Position Title
+                            </h3>
+
+                            <p class="company">
+                                Company or Organization
+                            </p>
+
+                        </div>
+
+                        <p>
+                            Describe your responsibilities,
+                            accomplishments, and skills
+                            developed through this experience.
+                        </p>
+
+                    </div>
 
                 </section>
 
 
 
                 <!-- =========================
-                     SKILLS SECTION
+                     SKILLS
                      ========================= -->
 
-                <section id="skills">
+                <section
+                    id="skills"
+                    class="content-section">
+
+                    <span class="section-label">
+                        SKILLS
+                    </span>
 
                     <h2>
-                        Skills
+                        What I Bring
                     </h2>
 
-                    <ul>
 
-                        <li>
+                    <div class="skills-list">
+
+                        <span>
                             Marketing
-                        </li>
+                        </span>
 
-                        <li>
+                        <span>
                             Digital Marketing
-                        </li>
+                        </span>
 
-                        <li>
+                        <span>
                             Communication
-                        </li>
+                        </span>
 
-                        <li>
+                        <span>
                             Social Media
-                        </li>
+                        </span>
 
-                        <li>
+                        <span>
                             Microsoft Office
-                        </li>
+                        </span>
 
-                        <li>
+                        <span>
                             Web Design
-                        </li>
+                        </span>
 
-                    </ul>
+                    </div>
 
                 </section>
 
 
 
                 <!-- =========================
-                     CONTACT SECTION
+                     CONTACT
                      ========================= -->
 
-                <section id="contact">
+                <section
+                    id="contact"
+                    class="content-section">
+
+                    <span class="section-label">
+                        GET IN TOUCH
+                    </span>
 
                     <h2>
                         Contact
@@ -353,16 +448,14 @@
 
                     <p>
                         If you would like to learn more about
-                        me or my work, you can contact me using
-                        the information below.
+                        me or my work, feel free to reach out.
                     </p>
 
-                    <p>
-                        Email:
-                        <a href="mailto:youremail@example.com">
-                            youremail@example.com
-                        </a>
-                    </p>
+                    <a
+                        class="email-link"
+                        href="mailto:youremail@example.com">
+                        youremail@example.com →
+                    </a>
 
                 </section>
 
@@ -372,22 +465,27 @@
 
 
             <!-- =========================
-                 RIGHT STICKY SIDEBAR
+                 RIGHT SIDEBAR
                  ========================= -->
 
             <aside class="right-sidebar">
 
                 <div class="sticky-content">
 
+                    <span class="sidebar-label">
+                        QUICK LINKS
+                    </span>
+
                     <h2>
-                        Quick Links
+                        Connect
                     </h2>
 
-                    <ul>
+                    <ul class="quick-links">
 
                         <li>
                             <a href="resume.html">
-                                Resume
+                                <span>Resume</span>
+                                <span>→</span>
                             </a>
                         </li>
 
@@ -396,7 +494,10 @@
                                 href="https://github.com/"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                GitHub
+
+                                <span>GitHub</span>
+                                <span>↗</span>
+
                             </a>
                         </li>
 
@@ -405,20 +506,26 @@
                                 href="https://www.linkedin.com/"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                LinkedIn
+
+                                <span>LinkedIn</span>
+                                <span>↗</span>
+
                             </a>
                         </li>
 
                     </ul>
 
 
-                    <h2>
-                        Connect
-                    </h2>
+                    <div class="sidebar-divider"></div>
 
-                    <p>
-                        Follow my professional work and
-                        projects through my social platforms.
+
+                    <span class="sidebar-label">
+                        FOCUS
+                    </span>
+
+                    <p class="focus-text">
+                        Marketing strategy, communication,
+                        creativity, and business.
                     </p>
 
                 </div>
@@ -435,6 +542,19 @@
              ========================= -->
 
         <footer class="site-footer">
+
+            <div>
+
+                <strong>
+                    Tate
+                </strong>
+
+                <span>
+                    · Marketing & Business Management
+                </span>
+
+            </div>
+
 
             <div class="footer-links">
 
@@ -454,26 +574,19 @@
                     Contact
                 </a>
 
-                <a href="privacy.html">
-                    Privacy
-                </a>
-
             </div>
 
 
-            <div>
+            <div class="copyright">
 
-                &copy; 2026 Your Name.
-                All rights reserved.
+                © 2026 Tate. All rights reserved.
 
             </div>
-
 
         </footer>
 
 
     </div>
-
 
 </body>
 
