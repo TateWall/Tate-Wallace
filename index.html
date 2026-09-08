@@ -1,378 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tate | Marketing & Business Management</title>
+    <title>Tate Wallace | Marketing & Business Management</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- JavaScript Navigation -->
+    <!-- Navigation JavaScript -->
     <script src="nav.js" defer></script>
 </head>
 
-
 <body>
-
-    <!-- =========================
-         MAIN WEBSITE CONTAINER
-         ========================= -->
 
     <div class="site-shell">
 
-
         <!-- =========================
              HEADER
-             ========================= -->
-
+        ========================== -->
         <header class="site-header">
 
-            <!-- Logo / Name -->
-            <div class="logo-area">
+            <div class="brand">
+                <div class="logo">Tate Wallace</div>
 
-                <a href="index.html">
-                    Tate
-                </a>
-
-            </div>
-
-
-            <!-- Introduction -->
-            <div class="info-area">
-
-                <div>
-
-                    <span class="eyebrow">
-                        MARKETING & BUSINESS MANAGEMENT
-                    </span>
-
-                    <p>
-                        Iowa State University · Ivy College of Business
-                    </p>
-
+                <div class="tagline">
+                    <span>MARKETING &amp; BUSINESS MANAGEMENT</span>
+                    <span>Iowa State University · Ivy College of Business</span>
                 </div>
-
             </div>
 
         </header>
 
 
-
         <!-- =========================
              PRIMARY NAVIGATION
-             ========================= -->
-
-        <nav
-            class="primary-nav"
-            data-primary-nav
-            aria-label="Primary navigation">
-        </nav>
-
+        ========================== -->
+        <nav class="primary-nav" data-primary-nav></nav>
 
 
         <!-- =========================
              SECONDARY NAVIGATION
-             ========================= -->
-
-        <nav
-            class="secondary-nav"
-            data-secondary-nav
-            aria-label="Secondary navigation">
-        </nav>
-
+        ========================== -->
+        <nav class="secondary-nav" data-secondary-nav></nav>
 
 
         <!-- =========================
-             MAIN THREE-COLUMN LAYOUT
-             ========================= -->
-
-        <main class="main-layout">
-
+             MAIN CONTENT AREA
+        ========================== -->
+        <div class="content-grid">
 
             <!-- =========================
                  LEFT SIDEBAR
-                 ========================= -->
+            ========================== -->
+            <aside class="sidebar left-sidebar">
 
-            <aside class="left-sidebar">
+                <div class="sidebar-card">
+                    <h3>Explore</h3>
 
-                <nav class="sidebar-nav">
-
-                    <h2>
-                        Explore
-                    </h2>
-
-                    <ul>
-
-                        <li>
-                            <a href="#about">
-                                About Me
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#projects">
-                                Projects
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#experience">
-                                Experience
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#skills">
-                                Skills
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">
-                                Contact
-                            </a>
-                        </li>
-
+                    <ul class="sidebar-links">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                </div>
 
-                </nav>
+                <div class="sidebar-card">
+                    <h3>Focus Areas</h3>
 
-
-                <div class="sidebar-information">
-
-                    <span class="sidebar-label">
-                        CURRENTLY
-                    </span>
-
-                    <p>
-                        Junior at Iowa State University
-                    </p>
-
-                    <p>
-                        Marketing & Business Management
-                    </p>
-
+                    <div class="focus-list">
+                        <span>Marketing</span>
+                        <span>Business Management</span>
+                        <span>Digital Marketing</span>
+                        <span>Communications</span>
+                    </div>
                 </div>
 
             </aside>
 
 
-
             <!-- =========================
-                 MAIN CONTENT
-                 ========================= -->
+                 CENTER / MAIN CONTENT
+            ========================== -->
+            <main class="main-content">
 
-            <section class="main-content">
-
-
-                <!-- =========================
-                     HERO
-                     ========================= -->
-
-                <div class="hero">
+                <!-- HERO -->
+                <section class="hero">
 
                     <div class="hero-content">
-
-                        <span class="hero-label">
-                            WELCOME
-                        </span>
+                        <p class="eyebrow">WELCOME</p>
 
                         <h1>
                             Building ideas into
-                            meaningful experiences.
+                            <span>meaningful experiences.</span>
                         </h1>
 
-                        <p>
-                            Explore my academic journey,
-                            professional interests, and
-                            creative work.
+                        <p class="hero-text">
+                            Marketing student focused on creativity, communication,
+                            strategy, and building meaningful connections between
+                            organizations and their audiences.
                         </p>
 
-                        <a
-                            href="#about"
-                            class="hero-button">
-                            Learn More
-                        </a>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="button button-primary">
+                                View My Work
+                            </a>
 
+                            <a href="#contact" class="button button-secondary">
+                                Get In Touch
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-
+                </section>
 
 
                 <!-- =========================
                      ABOUT ME
-                     ========================= -->
+                ========================== -->
+                <section class="content-section" id="about">
 
-                <section
-                    id="about"
-                    class="content-section">
-
-                    <span class="section-label">
-                        ABOUT ME
-                    </span>
-
-                    <h2>
-                        A little about me
-                    </h2>
-
-                    <p>
-                        Welcome to my website. My name is Tate,
-                        and I am a current junior majoring in
-                        marketing and business management at
-                        Iowa State University within the Ivy
-                        College of Business.
-                    </p>
-
-                    <p>
-                        This website highlights my academic
-                        experience, professional interests,
-                        projects, and skills. I created this
-                        website to provide an easy way for
-                        visitors to learn more about my work
-                        and experience.
-                    </p>
-
-                </section>
-
-
-
-                <!-- =========================
-                     PROJECTS
-                     ========================= -->
-
-                <section
-                    id="projects"
-                    class="content-section">
-
-                    <span class="section-label">
-                        MY WORK
-                    </span>
-
-                    <h2>
-                        Projects
-                    </h2>
-
-                    <p>
-                        Explore some of the projects I have
-                        completed through my academic and
-                        professional experiences.
-                    </p>
-
-
-                    <div class="project-grid">
-
-
-                        <article class="project-card">
-
-                            <span class="card-number">
-                                01
-                            </span>
-
-                            <h3>
-                                Marketing Project
-                            </h3>
-
-                            <p>
-                                A marketing project showcasing
-                                strategic thinking, research,
-                                and communication.
-                            </p>
-
-                            <a href="projects.html">
-                                View Project →
-                            </a>
-
-                        </article>
-
-
-
-                        <article class="project-card">
-
-                            <span class="card-number">
-                                02
-                            </span>
-
-                            <h3>
-                                Website Project
-                            </h3>
-
-                            <p>
-                                A personal website designed to
-                                showcase my experience, skills,
-                                and professional interests.
-                            </p>
-
-                            <a href="projects.html">
-                                View Project →
-                            </a>
-
-                        </article>
-
-
+                    <div class="section-heading">
+                        <p class="eyebrow">ABOUT ME</p>
+                        <h2>Who I Am</h2>
                     </div>
 
-                </section>
-
-
-
-                <!-- =========================
-                     EXPERIENCE
-                     ========================= -->
-
-                <section
-                    id="experience"
-                    class="content-section">
-
-                    <span class="section-label">
-                        EXPERIENCE
-                    </span>
-
-                    <h2>
-                        Professional Experience
-                    </h2>
-
-                    <p>
-                        Add your internships, jobs, volunteer
-                        experiences, and other professional
-                        experiences here.
-                    </p>
-
-
-                    <div class="experience-card">
-
-                        <div>
-
-                            <span class="card-number">
-                                EXPERIENCE
-                            </span>
-
-                            <h3>
-                                Position Title
-                            </h3>
-
-                            <p class="company">
-                                Company or Organization
-                            </p>
-
-                        </div>
+                    <div class="about-content">
 
                         <p>
-                            Describe your responsibilities,
-                            accomplishments, and skills
-                            developed through this experience.
+                            Welcome to my website. My name is Tate, and I am a
+                            current junior majoring in marketing and business
+                            management at Iowa State University within the Ivy
+                            College of Business.
+                        </p>
+
+                        <p>
+                            This website highlights my academic experience,
+                            professional interests, projects, and skills. I
+                            created this website to provide an easy way for
+                            visitors to learn more about my work and experience.
                         </p>
 
                     </div>
@@ -380,214 +154,279 @@
                 </section>
 
 
-
                 <!-- =========================
-                     SKILLS
-                     ========================= -->
+                     PROJECTS
+                ========================== -->
+                <section class="content-section" id="projects">
 
-                <section
-                    id="skills"
-                    class="content-section">
+                    <div class="section-heading">
+                        <p class="eyebrow">SELECTED WORK</p>
+                        <h2>Projects</h2>
+                    </div>
 
-                    <span class="section-label">
-                        SKILLS
-                    </span>
+                    <div class="project-grid">
 
-                    <h2>
-                        What I Bring
-                    </h2>
+                        <article class="project-card">
+
+                            <div class="project-number">
+                                01
+                            </div>
+
+                            <div class="project-card-content">
+
+                                <h3>
+                                    Dorm Furniture Consignment Concept
+                                </h3>
+
+                                <p>
+                                    Developed a business concept designed to
+                                    provide Iowa State University students with
+                                    convenient options for buying and selling
+                                    dorm furniture.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>Marketing</span>
+                                    <span>Market Research</span>
+                                    <span>Business Strategy</span>
+                                </div>
+
+                            </div>
+
+                        </article>
 
 
-                    <div class="skills-list">
+                        <article class="project-card">
 
-                        <span>
-                            Marketing
-                        </span>
+                            <div class="project-number">
+                                02
+                            </div>
 
-                        <span>
-                            Digital Marketing
-                        </span>
+                            <div class="project-card-content">
 
-                        <span>
-                            Communication
-                        </span>
+                                <h3>
+                                    Marketing &amp; Social Media Analysis
+                                </h3>
 
-                        <span>
-                            Social Media
-                        </span>
+                                <p>
+                                    Analyzed marketing campaigns and social media
+                                    content to evaluate audience engagement,
+                                    branding, communication, and marketing
+                                    effectiveness.
+                                </p>
 
-                        <span>
-                            Microsoft Office
-                        </span>
+                                <div class="project-tags">
+                                    <span>Digital Marketing</span>
+                                    <span>Social Media</span>
+                                    <span>Strategy</span>
+                                </div>
 
-                        <span>
-                            Web Design
-                        </span>
+                            </div>
+
+                        </article>
 
                     </div>
 
                 </section>
 
 
-
                 <!-- =========================
-                     CONTACT
-                     ========================= -->
+                     EXPERIENCE
+                ========================== -->
+                <section class="content-section" id="experience">
 
-                <section
-                    id="contact"
-                    class="content-section">
+                    <div class="section-heading">
+                        <p class="eyebrow">EXPERIENCE</p>
+                        <h2>What I Bring</h2>
+                    </div>
 
-                    <span class="section-label">
-                        GET IN TOUCH
-                    </span>
+                    <div class="experience-card">
 
-                    <h2>
-                        Contact
-                    </h2>
+                        <div class="experience-item">
+                            <div class="experience-icon">01</div>
 
-                    <p>
-                        If you would like to learn more about
-                        me or my work, feel free to reach out.
-                    </p>
+                            <div>
+                                <h3>Marketing</h3>
 
-                    <a
-                        class="email-link"
-                        href="mailto:youremail@example.com">
-                        youremail@example.com →
-                    </a>
+                                <p>
+                                    Understanding of marketing strategy,
+                                    consumer behavior, social media, branding,
+                                    and promotional communication.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="experience-item">
+                            <div class="experience-icon">02</div>
+
+                            <div>
+                                <h3>Communication</h3>
+
+                                <p>
+                                    Strong written and verbal communication
+                                    skills with an emphasis on creating clear
+                                    and engaging messages.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="experience-item">
+                            <div class="experience-icon">03</div>
+
+                            <div>
+                                <h3>Business</h3>
+
+                                <p>
+                                    Business management knowledge combined with
+                                    an interest in developing practical,
+                                    customer-focused solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </section>
 
 
-            </section>
+                <!-- =========================
+                     SKILLS
+                ========================== -->
+                <section class="content-section" id="skills">
 
+                    <div class="section-heading">
+                        <p class="eyebrow">SKILLS</p>
+                        <h2>Areas of Strength</h2>
+                    </div>
+
+                    <div class="skills-list">
+
+                        <span class="skill-pill">Marketing Strategy</span>
+
+                        <span class="skill-pill">Digital Marketing</span>
+
+                        <span class="skill-pill">Social Media</span>
+
+                        <span class="skill-pill">Content Creation</span>
+
+                        <span class="skill-pill">Market Research</span>
+
+                        <span class="skill-pill">Communication</span>
+
+                        <span class="skill-pill">Business Management</span>
+
+                        <span class="skill-pill">Microsoft Excel</span>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =========================
+                     CONTACT
+                ========================== -->
+                <section class="content-section contact-section" id="contact">
+
+                    <div class="section-heading">
+                        <p class="eyebrow">CONTACT</p>
+                        <h2>Let's Connect</h2>
+                    </div>
+
+                    <p>
+                        Interested in learning more about my experience,
+                        projects, or professional interests? Feel free to
+                        connect with me.
+                    </p>
+
+                    <a href="mailto:your-email@example.com"
+                       class="button button-primary">
+                        Email Me
+                    </a>
+
+                </section>
+
+            </main>
 
 
             <!-- =========================
                  RIGHT SIDEBAR
-                 ========================= -->
+            ========================== -->
+            <aside class="sidebar right-sidebar">
 
-            <aside class="right-sidebar">
+                <div class="sidebar-card">
 
-                <div class="sticky-content">
+                    <h3>Quick Links</h3>
 
-                    <span class="sidebar-label">
-                        QUICK LINKS
-                    </span>
-
-                    <h2>
-                        Connect
-                    </h2>
-
-                    <ul class="quick-links">
+                    <ul class="sidebar-links">
 
                         <li>
                             <a href="resume.html">
-                                <span>Resume</span>
-                                <span>→</span>
+                                Resume
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="https://github.com/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <span>GitHub</span>
-                                <span>↗</span>
-
+                            <a href="https://github.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="https://www.linkedin.com/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-
-                                <span>LinkedIn</span>
-                                <span>↗</span>
-
+                            <a href="https://www.linkedin.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                LinkedIn
                             </a>
                         </li>
 
                     </ul>
 
+                </div>
 
-                    <div class="sidebar-divider"></div>
 
+                <div class="sidebar-card highlight-card">
 
-                    <span class="sidebar-label">
-                        FOCUS
-                    </span>
+                    <p class="eyebrow">CURRENTLY</p>
 
-                    <p class="focus-text">
-                        Marketing strategy, communication,
-                        creativity, and business.
+                    <h3>
+                        Learning,
+                        creating,
+                        and growing.
+                    </h3>
+
+                    <p>
+                        Exploring opportunities to apply marketing and
+                        business knowledge in real-world environments.
                     </p>
 
                 </div>
 
             </aside>
 
-
-        </main>
-
+        </div>
 
 
         <!-- =========================
              FOOTER
-             ========================= -->
-
+        ========================== -->
         <footer class="site-footer">
 
             <div>
-
-                <strong>
-                    Tate
-                </strong>
-
-                <span>
-                    · Marketing & Business Management
-                </span>
-
+                <strong>Tate Wallace</strong>
+                <span> · Marketing &amp; Business Management</span>
             </div>
 
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </div>
-
-
-            <div class="copyright">
-
-                © 2026 Tate. All rights reserved.
-
+            <div>
+                <span>Iowa State University</span>
             </div>
 
         </footer>
 
-
     </div>
 
 </body>
-
 </html>
