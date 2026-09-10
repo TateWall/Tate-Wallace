@@ -1,86 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tate Wallace – Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tate Wallace | Marketing & Business Management</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f7f7f7;
-            color: #222;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        header {
-            background-color: #0f3d3e;
-            padding: 40px 20px;
-            text-align: center;
-            color: white;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.4rem;
-            letter-spacing: 1px;
-        }
-
-        header p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .section {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-        }
-
-        .section h2 {
-            margin-top: 0;
-            color: #0f3d3e;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
+<script src="nav.js" defer></script>
 </head>
-
 <body>
 
-<header>
-    <h1>Tate Wallace</h1>
-    <p>Empowering ideas through strategic marketing, design, and communication.</p>
+<div class="site-shell">
+
+<header class="site-header">
+<div class="brand">
+<div class="logo">Tate Wallace</div>
+<div class="tagline">
+<span>MARKETING &amp; BUSINESS MANAGEMENT</span>
+<span>Iowa State University · Ivy College of Business</span>
+</div>
+</div>
 </header>
 
-<div class="content">
+<nav class="primary-nav" data-primary-nav></nav>
+<nav class="secondary-nav" data-secondary-nav></nav>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I’m a Marketing and Management student at Iowa State University focused on building meaningful, strategic, and visually compelling experiences.</p>
-    </div>
+<div class="content-grid">
 
-    <div class="section">
-        <h2>Focus Areas</h2>
-        <p><strong>Focus Areas:</strong> Marketing, Business Management/Administration, and Digital Marketing Communications</p>
-    </div>
+<aside class="sidebar left-sidebar">
+<div class="sidebar-card">
+<h3>Explore</h3>
+<ul class="sidebar-links">
+<li><a href="#about">About Me</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <p>More projects coming soon.</p>
-    </div>
+<div class="sidebar-card">
+<h3>Focus Areas</h3>
+<div class="focus-list">
+<span>Marketing</span>
+<span>Business Management</span>
+<span>Digital Marketing</span>
+<span>Communications</span>
+</div>
+</div>
+</aside>
+
+<main class="main-content">
+
+<section class="hero">
+<div class="hero-content">
+<p class="eyebrow">WELCOME</p>
+
+<!-- Removed tagline -->
+<h1></h1>
+
+<p class="hero-text">
+Marketing student focused on creativity, communication,
+strategy, and building meaningful connections between
+organizations and their audiences.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="button button-primary">View My Work</a>
+<a href="#contact" class="button button-secondary">Get In Touch</a>
+</div>
+</div>
+</section>
+
+<section class="content-section" id="about">
+<div class="section-heading">
+<p class="eyebrow">ABOUT ME</p>
+<h2>Who I Am</h2>
+</div>
+
+<div class="about-content">
+<p>
+Welcome to my website. My name is Tate, and I am a
+current junior majoring in marketing and business
+management at Iowa State University within the Ivy
+College of Business.
+</p>
+
+<p>
+This website highlights my academic experience,
+professional interests, projects, and skills. I
+created this website to provide an easy way for
+visitors to learn more about my work and experience.
+</p>
+</div>
+</section>
+
+<section class="content-section" id="projects">
+<div class="section-heading">
+<p class="eyebrow">SELECTED WORK</p>
+<h2>Projects</h2>
+</div>
+
+<!-- Placeholder projects removed -->
+<div class="project-grid"></div>
+
+</section>
+
+<section class="content-section" id="experience">
+<div class="section-heading">
+<p class="eyebrow">EXPERIENCE</p>
+<h2>What I Bring</h2>
+</div>
+
+<div class="experience-card">
+<div class="experience-item">
+<div class="experience-icon">01</div>
+<div>
+<h3>Marketing</h3>
+<p>
+Understanding of marketing strategy,
+consumer behavior, social media, branding,
+and promotional communication.
+</p>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-icon">02</div>
+<div>
+<h3>Communication</h3>
+<p>
+Strong written and verbal communication
+skills with an emphasis on creating clear
+and engaging messages.
+</p>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-icon">03</div>
+<div>
+<h3>Business</h3>
+<p>
+Business management knowledge combined with
+an interest in developing practical,
+customer-focused solutions.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="content-section" id="skills">
+<div class="section-heading">
+<p class="eyebrow">SKILLS</p>
+<h2>Areas of Strength</h2>
+</div>
+
+<div class="skills-list">
+<span class="skill-pill">Marketing Strategy</span>
+<span class="skill-pill">Digital Marketing</span>
+<span class="skill-pill">Social Media</span>
+<span class="skill-pill">Content Creation</span>
+<span class="skill-pill">Market Research</span>
+<span class="skill-pill">Communication</span>
+<span class="skill-pill">Business Management</span>
+<span class="skill-pill">Microsoft Excel</span>
+</div>
+</section>
+
+<section class="content-section contact-section" id="contact">
+<div class="section-heading">
+<p class="eyebrow">CONTACT</p>
+<h2>Let's Connect</h2>
+</div>
+
+<p>
+Interested in learning more about my experience,
+projects, or professional interests? Feel free to
+connect with me.
+</p>
+
+<a href="mailto:your-email@example.com" class="button button-primary">
+Email Me
+</a>
+</section>
+
+</main>
+
+<aside class="sidebar right-sidebar">
+<div class="sidebar-card">
+<h3>Quick Links</h3>
+<ul class="sidebar-links">
+<li><a href="resume.html">Resume</a></li>
+<li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+<li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="sidebar-card highlight-card">
+<p class="eyebrow">CURRENTLY</p>
+<h3>Learning, creating, and growing.</h3>
+<p>
+Exploring opportunities to apply marketing and
+business knowledge in real-world environments.
+</p>
+</div>
+</aside>
 
 </div>
 
+<footer class="site-footer">
+<div>
+<strong>Tate Wallace</strong>
+<span> · Marketing &amp; Business Management</span>
+</div>
+<div>
+<span>Iowa State University</span>
+</div>
+</footer>
+
+</div>
 </body>
 </html>
+
+
+
+
+
+
 
 
 
