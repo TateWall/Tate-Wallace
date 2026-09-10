@@ -14,8 +14,8 @@
                 href: "index.html"
             },
             {
-                label: "About",
-                href: "about.html"
+                label: "Education",
+                href: "education.html"
             },
             {
                 label: "Projects",
