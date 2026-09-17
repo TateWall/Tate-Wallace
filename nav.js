@@ -38,7 +38,9 @@
             },
             {
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/"
+                href: "www.linkedin.com/in/tate-wallace-8126b5328
+
+
             }
         ]
     };
