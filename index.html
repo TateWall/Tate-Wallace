@@ -9,37 +9,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Roboto Serif font for title -->
+<!-- ⭐ Added Roboto Serif font -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 <script src="nav.js" defer></script>
 
 <style>
-    /* Center header container */
-    .header-flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.2rem;
-        padding: 1rem 0;
-        text-align: center;
-    }
-
-    /* TW logo stays as-is */
-    .logo-area a {
-        font-size: 2.2rem;
-        font-weight: 800;
-        text-decoration: none;
-        color: var(--dark-teal);
-    }
-
-    /* Larger centered title */
+    /* ⭐ Title styling */
     .header-title {
         font-family: 'Roboto Serif', serif;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color: var(--dark-teal);
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Ensures TW logo + title sit side-by-side */
+    .header-flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 </style>
 
@@ -50,12 +42,13 @@
 
 <header class="site-header">
 
-    <!-- Centered TW logo + title -->
+    <!-- ⭐ UPDATED LOGO AREA (TW logo + new title) -->
     <div class="header-flex">
         <div class="logo-area">
             <a href="index.html">TW</a>
         </div>
 
+        <!-- ⭐ New title text -->
         <div class="header-title">Personal Webpage</div>
     </div>
 
