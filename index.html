@@ -9,8 +9,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- ⭐ Added Roboto Serif font -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 <script src="nav.js" defer></script>
+
+<style>
+    /* ⭐ Title styling */
+    .header-title {
+        font-family: 'Roboto Serif', serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--dark-teal);
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Ensures TW logo + title sit side-by-side */
+    .header-flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
+
 </head>
 <body>
 
@@ -18,9 +42,14 @@
 
 <header class="site-header">
 
-    <!-- ⭐ UPDATED LOGO AREA (TW logo) -->
-    <div class="logo-area">
-        <a href="index.html">TW</a>
+    <!-- ⭐ UPDATED LOGO AREA (TW logo + new title) -->
+    <div class="header-flex">
+        <div class="logo-area">
+            <a href="index.html">TW</a>
+        </div>
+
+        <!-- ⭐ New title text -->
+        <div class="header-title">Personal Webpage</div>
     </div>
 
 </header>
@@ -224,6 +253,7 @@ business knowledge in real-world environments.
 </div>
 </body>
 </html>
+
 
 
 
